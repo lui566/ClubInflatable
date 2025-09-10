@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inflatable Night Club LA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000010, #1a0026);
+      color: white;
+      text-align: center;
+    }
+    header {
+      background: rgba(0,0,0,0.8);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+    }
+    header h1 {
+      color: #c770ff;
+      font-size: 2em;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff0099;
+    }
+    .hero {
+      padding: 100px 20px;
+      background: url('https://images.pexels.com/photos/342520/pexels-photo-342520.jpeg') no-repeat center center/cover;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 0 0 10px #ff00cc, 0 0 20px #6600ff;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: linear-gradient(45deg, #ff0099, #6600ff);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #ff00cc;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .gallery img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #6600ff;
+    }
+    .pricing {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .price-box {
+      background: rgba(0,0,0,0.7);
+      border-radius: 15px;
+      margin: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 10px #ff00cc;
+    }
+    .contact {
+      background: #111;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Inflatable Night Club LA</h1>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Convierte tu fiesta en un club privado 🎶✨</h2>
+    <a class="btn" href="https://wa.me/13239065335" target="_blank">Reserva por WhatsApp</a>
+  </section>
+
+  <section id="servicios">
+    <h2>🔥 Nuestros Servicios</h2>
+    <p>🎉 Renta de Inflatable Night Club</p>
+    <p>💡 Luces LED + sonido incluido</p>
+    <p>⚡ Instalación rápida y segura</p>
+    <p>🎧 DJ Incluido</p>
+	<p>🥂 Bartender Incluido</p>
+  </section>
+
+  <section id="galeria" class="gallery">
+    <h2>📸 Galería</h2>
+    <img src="https://i.ibb.co/fn7dcD6/inflatable1.jpg" alt="Inflatable 1">
+    <img src="https://i.ibb.co/NF7Tn5j/inflatable2.jpg" alt="Inflatable 2">
+    <img src="https://i.ibb.co/7zBCKyQ/inflatable3.jpg" alt="Inflatable 3">
+  </section>
+
+  <section id="precios">
+    <h2>💰 Paquetes</h2>
+    <div class="pricing">
+      <div class="price-box">
+        <h3>Básico</h3>
+        <p>$400</p>
+        <p>4 horas, luces y sonido</p>
+      </div>
+      <div class="price-box">
+        <h3>Premium</h3>
+        <p>$600</p>
+        <p>6 horas, luces, sonido y DJ</p>
+      </div>
+      <div class="price-box">
+        <h3>VIP</h3>
+        <p>$900</p>
+        <p>8 horas, luces, sonido, DJ + barra</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>📩 Contáctanos</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/1XXXXXXXXXX" target="_blank">+1 (XXX) XXX-XXXX</a></p>
+    <p>📧 Email: contacto@inflatableclub.com</p>
+    <p>📸 Instagram: @inflatableclubLA</p>
+  </section>
+</body>
+</html>
