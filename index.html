@@ -70,18 +70,26 @@
 	#verMas:checked ~ .galeria-img.oculto {
   	 display: inline-block;
 
-	/* Mostrar/ocultar texto del botón */
-	.ver-menos {
- 	 display: none;
 	}
 
-	#verMas:checked + .btn .ver-mas {
-  	 display: none;
+  	/* Mostrar/ocultar texto del botón */
+  	.ver-mas,
+  	.ver-menos {
+     display: block; /* Cada uno en su propia línea */
+  	}
+
+  	.ver-menos {
+     display: none; /* Inicialmente oculto */
 	}
 
-	#verMas:checked + .btn .ver-menos {
-  	 display: inline;
-	}
+  	#verMas:checked + .btn .ver-mas {
+     display: none;
+  	}
+
+  	#verMas:checked + .btn .ver-menos {
+     display: block;
+  	}
+	  
     .pricing {
       display: flex;
       justify-content: center;
@@ -182,6 +190,7 @@
   </section>
 </body>
 </html>
+
 
 
 
