@@ -73,22 +73,22 @@
 	}
 
   	/* Mostrar/ocultar texto del botón */
-  	.ver-mas,
-  	.ver-menos {
-     display: block; /* Cada uno en su propia línea */
-  	}
-
-  	.ver-menos {
-     display: none; /* Inicialmente oculto */
+  	.ver-mas, .ver-menos {
+  	 display: block;
 	}
 
-  	#verMas:checked + .btn .ver-mas {
-     display: none;
-  	}
+	.ver-menos {
+  	 display: none; /* Oculto por defecto */
+	}
 
-  	#verMas:checked + .btn .ver-menos {
-     display: block;
-  	}
+	/* Cuando el checkbox está marcado, alternar los textos */
+	#verMas:checked ~ label.btn .ver-mas {
+  	 display: none;
+	}
+
+	#verMas:checked ~ label.btn .ver-menos {
+  	 display: block;
+	}
 	  
     .pricing {
       display: flex;
@@ -190,6 +190,7 @@
   </section>
 </body>
 </html>
+
 
 
 
