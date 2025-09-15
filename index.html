@@ -69,6 +69,18 @@
 	/* Mostrar las fotos ocultas cuando el checkbox está activo */
 	#verMas:checked ~ .galeria-img.oculto {
   	 display: inline-block;
+
+	/* Mostrar/ocultar texto del botón */
+	.ver-menos {
+ 	 display: none;
+	}
+
+	#verMas:checked + .btn .ver-mas {
+  	 display: none;
+	}
+
+	#verMas:checked + .btn .ver-menos {
+  	 display: inline;
 	}
     .pricing {
       display: flex;
@@ -133,9 +145,12 @@
     <img src="https://i.ibb.co/XYZ/foto7.jpg" class="galeria-img oculto">
     <img src="https://i.ibb.co/XYZ/foto8.jpg" class="galeria-img oculto">
 
-    <!-- Botón que controla el checkbox -->
-    <label for="verMas" class="btn">Ver más</label>
-  </section>
+    <!-- Botón que cambia de texto según el estado del checkbox -->
+  <label for="verMas" class="btn">
+    <span class="ver-mas">Ver más</span>
+    <span class="ver-menos">Ver menos</span>
+  </label>
+</section>
 
   <section id="precios">
     <h2>💰 Paquetes</h2>
@@ -167,6 +182,7 @@
   </section>
 </body>
 </html>
+
 
 
 
